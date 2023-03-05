@@ -6,7 +6,7 @@ header("Content-Type: application/json; charset=UTF-8");
 
 // подключение к базе данных будет здесь
 // подключение базы данных и файл, содержащий объекты
-include_once "../vendor/database.php";
+include_once "../objects/database.php";
 include_once "../objects/user.php";
 
 // получаем соединение с базой данных
@@ -22,6 +22,8 @@ $num = $stmt->rowCount();
 
 // проверка, найдено ли больше 0 записей
 if ($num > 0) {
+
+
     // массив товаров
     $products_arr = array();
     $products_arr["user"] = array();

@@ -8,7 +8,7 @@ header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
 // получаем соединение с базой данных
-include_once "../vendor/database.php";
+include_once "../objects/database.php";
 
 // создание объекта товара
 include_once "../objects/user.php";

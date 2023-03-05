@@ -6,7 +6,7 @@ header("Content-Type: application/json; charset=UTF-8");
 
 // подключение к базе данных будет здесь
 // подключение базы данных и файл, содержащий объекты
-include_once "../vendor/database.php";
+include_once "../objects/database.php";
 include_once "../objects/city.php";
 
 // получаем соединение с базой данных
